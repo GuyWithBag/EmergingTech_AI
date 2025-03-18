@@ -8,7 +8,7 @@ model = load_model('fruit_recognition_model.h5')
 with open('class_indices.json', 'r') as f:
     fruit_classes = json.load(f)
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
